@@ -1,0 +1,1 @@
+$(function(){var t=$(".count").text();$(".section-panel").hover(function(){$(".count").each(function(){var t=$(this);jQuery({Counter:0}).animate({Counter:t.text()},{duration:1200,easing:"swing",step:function(){t.text(Math.ceil(this.Counter))}})})},function(){$(".count").text(Math.floor(t/1e4))})});

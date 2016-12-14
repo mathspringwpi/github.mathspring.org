@@ -1,0 +1,1 @@
+$(function(){var o=$("#login-form");o.submit(function(o){o.preventDefault(),$.ajax({url:"http://localhost:8080/mt/WoLoginServlet",method:"POST",dataType:"html",data:{action:"LoginK12_2",skin:"k12",uname:"hmngo",password:"test"},success:function(o){console.log("good"),console.log(o)},error:function(o){console.log(o)}})})});
